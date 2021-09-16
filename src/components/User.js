@@ -4,6 +4,11 @@ import classes from './User.module.css';
 
 // class components
 class User extends Component {
+
+  componentWillUnmount() {
+    console.log('User Will Unmount');
+  }
+
   render() {
     return <li className={classes.user}>{this.props.name}</li>;
   }
